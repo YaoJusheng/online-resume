@@ -74,13 +74,13 @@ h1, h2, h3, h4, h5 {
     line-height: 2;
 }
 
-.stack-list {
+.stack-list, .tool-list {
     list-style: none;
     padding-left: 0px;
     line-height: 1.5;
 }
 
-.stack-list li {
+.stack-list li, .tool-list li {
     margin-bottom: 12px;
 }
 
@@ -207,8 +207,20 @@ progress::-moz-progress-value {
     border:5px solid #607d8b;
     width:160px;
     height:160px;
+    -webkit-transition: -webkit-transform 1.0s ease-out;
+    -moz-transition: -moz-transform 1.0s ease-out;
+    transition: transform 1.0s ease-out;
 }
 
+.portrait:hover {
+  /* 鼠标经过停止头像旋转
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;*/
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
 
 .container {
     position: relative;
@@ -277,7 +289,7 @@ ul li{
     position: relative;
 }
 
- .experience-list .item-remove {
+.experience-list .item-remove {
     position: absolute;
     right: 2px;
     top: 0px;
@@ -287,7 +299,7 @@ ul li{
     
 }
 
- .stack-list .item-remove {
+.stack-list .item-remove {
     position: absolute;
     right: 2px;
     top: 0px;
@@ -297,7 +309,17 @@ ul li{
     
 }
 
-.skill-label {
+.tool-list .item-remove {
+  position: absolute;
+  right: 2px;
+  top: 0px;
+  margin-right: 2px;
+  visibility: hidden;
+  cursor: pointer;
+  
+}
+
+.skill-label, .tool-label {
   color: rgb(112, 141, 155);
   font-weight: bold;
   padding: 0;
