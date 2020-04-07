@@ -34,6 +34,12 @@ span {
     vertical-align: top;
 }
 
+.label-text {
+  width: inherit;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
 .iconfont {
     font-family:"iconfont" !important;
     font-size:1.1em;font-style:normal;
@@ -169,12 +175,15 @@ progress::-moz-progress-value {
     margin-bottom: 20px;
 }
 
+
 .weixin{
     margin-top: 20px;
     background-color: #e0eaf0;   
     position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 15px 0;
+    /* padding-top: 40px; */
+    /* padding-bottom: 20px; */
+    /* width: 80%; */
     text-align: center;
 }
 
@@ -288,4 +297,46 @@ ul li{
     
 }
 
+.skill-label {
+  color: rgb(112, 141, 155);
+  font-weight: bold;
+  padding: 0;
+}
 
+dl {
+  margin-bottom:5px;
+}
+
+dl dt h4 {
+  margin: 0;
+  padding: 0;
+  /* opacity: 0.6; */
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+  text-indent: 2em;
+}
+
+.h-title {
+  color: black;
+  font-weight: bold;
+}
+
+.h-tag {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.circle {
+  color: rgb(161, 131, 82);
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.intro-info {
+  text-indent: 2em;
+  letter-spacing: 2px;
+}
